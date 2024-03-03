@@ -1,0 +1,141 @@
+body {
+    background: linear-gradient(to right, #71ffb5, #87F5FA, #7b84fc);
+    background: linear-gradient(to right, #ff7f7f, #ffdb8c, #fbf691);
+}
+
+.container {
+    padding: 50px;
+    border: white 3px solid;
+    border-radius: 10px;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    background-color: rgb(86, 86, 86, 0);
+    width: 40%;
+    height: fit-content;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 120%;
+}
+
+.search-box {
+    /* set all elements to center of parent */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.search-btn {
+    background-color: rgb(0, 168, 14);
+    border-radius: 4px;
+    padding: 2px;
+    width: fit-content;
+    color: white;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1%;
+}
+
+img[alt="Wind"], 
+img[alt="Humidity"] {
+    padding-top: 5%;
+    width: 45px;
+}
+
+img[alt="Weather"] {
+    width: 100px;
+    padding: 0 3% 0 3%;
+}
+
+.temp {
+    height: fit-content;
+    text-align: left;
+}
+
+.icon-temp-container {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.wind, .humidity {
+    width: 100%;
+    font-size: medium;
+}
+
+.wind-info {
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 3%;
+    float: left;
+    width: 40%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.humidity-info {
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 3%;
+    float: right;
+    width: 40%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* color: rgb(99, 99, 99); */
+    color: #3b3b3b;
+}
+
+h1 {
+    cursor: pointer;
+}
+
+.thanks {
+    /* At the bottom right of the page */
+    position: absolute;
+    bottom: 3px; right: 5px;
+}
+
+/* media queries */
+@media only screen and (max-width: 650px) {
+    .wind-info, .humidity-info {
+        width: 93%;
+        float: none;
+        margin-top: 10%;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    img[alt="Weather"] {
+        width: 70px;
+    }
+    
+    img[alt="Wind"], 
+    img[alt="Humidity"] {
+        width: 40px;
+    }
+
+    h1 { font-size: 200%; }
+    h2 { font-size: 70%; }
+}

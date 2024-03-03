@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/mystyle.css">
+    <title>Weather Crown</title>
+</head>
+<body>
+
+    <div class="container" id="container">
+        <div class="search-box">
+            <input id="location" type="text" class="search" placeholder="Enter the location name" required>
+            <div id="search-btn" class="search-btn">
+                Search
+            </div>
+        </div>
+
+        <div class="icon-temp-container">
+            <img id="weather-icon" src="images/search.png" alt="Weather">
+            <h1 id="temperature" class="temp">XX°C</h1>
+        </div>
+
+        <div class="wind-info">
+            <img src="images/wind.png" alt="Wind">
+            <h2 id="wind" class="wind">Wind: XXkm/h</h2>
+        </div>
+
+        <div class="humidity-info">
+            <img src="images/humidity.png" alt="Humidity">
+            <h2 id="humidity" class="humidity">Humidity: XX%</h2>
+        </div>
+
+    </div>
+    
+    <div class="thanks">
+        <!-- Powered by <a href="https://www.weatherapi.com/" title="Weather API">WeatherAPI.com</a> -->
+        <a href="https://www.weatherapi.com/" title="Free Weather API" target="_blank"><img src='https://cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="WeatherAPI.com" border="0"></a>
+    </div>
+
+    <script src="Javascript/myscript.js"></script>
+</body>
+</html>
